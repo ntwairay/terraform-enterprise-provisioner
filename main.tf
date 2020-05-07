@@ -5,6 +5,6 @@ provider "tfe" {
 }
 
 resource "tfe_workspace" "example" {
-  name         = "application-a-prod"
-  organization = "vibrato"
+  name         = var.workspace_name
+  organization = var.organization
 }
