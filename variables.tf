@@ -29,3 +29,7 @@ variable "secret_value" {
 variable "sensitive" {
   default = true
 }
+
+variable "category" {
+  default = "terraform"
+}

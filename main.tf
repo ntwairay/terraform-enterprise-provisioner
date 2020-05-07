@@ -12,6 +12,7 @@ resource "tfe_workspace" "example" {
 resource "tfe_variable" "example" {
   key          = var.secret_key
   value        = var.secret_value
+  category     = var.category
   workspace_id = tfe_workspace.example.id
   sensitive    = var.sensitive
 }
